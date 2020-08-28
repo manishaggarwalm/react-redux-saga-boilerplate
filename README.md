@@ -16,6 +16,64 @@ npm install
 npm run dev
 ```
 
+## Redux
+
+Redux is a predictable state container for JavaScript apps. (Not to be confused with a WordPress framework – Redux Framework.)
+Redux has 4 major components:
+
+1. Action Types
+2. Actions
+3. Reducers
+4. Middleware like thunk, saga(where we handle api calls and other complex logics)
+
+### What are Action Types and How to define Action Types?
+
+Action Types are tiny part of application but are major building block of Redux Application.
+
+```
+const CREATE_ITEM = "CREATE_ITEM";
+```
+
+or you can use it like an object structure
+
+```
+export const Types = {
+  CREATE_ITEM: "CREATE_ITEM",
+  DELETE_ITEM: "DELETE_ITEM",
+};
+```
+
+It should be **unique** throughout the application.
+
+### What are Actions and How to define Actions?
+
+Actions are something that orchestras the whole flow of application, with the help of actions we can modify the data in the store or perform some operations like API calls, remove data from store.
+
+we can simply define action as:
+
+```
+const createItem = (task) => ({
+  type: Types.CREATE_ITEM,
+  payload: task,
+});
+```
+
+It should be object with two keys, one `type` and other `payload`, you can use any name here for the keys but to make it consistent we use type and payload (The use of `type` and `payload` will come in `reducers`)
+
+or, Alternatively you can use `redux-actions`
+
+```
+npm install redux-actions
+```
+
+```
+import { createActions } from 'redux-actions';
+
+const CREATE_ITEM = "CREATE_ITEM";
+const createItem = createActions(CREATE_ITEM)
+
+```
+
 ## Dependencies
 
 1. "react": "^16.13.1"
