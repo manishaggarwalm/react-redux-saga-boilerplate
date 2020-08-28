@@ -1,5 +1,9 @@
 # react-redux-saga-boilerplate
 
+[![Dependencies Status](https://david-dm.org/manishaggarwalm/react-redux-saga-boilerplate.svg)](https://www.npmjs.com/package/react-redux-saga-boilerplate)
+[![Version Status](https://badge.fury.io/js/react-redux-saga-boilerplate.svg)](https://www.npmjs.com/package/react-redux-saga-boilerplate)
+[![Download Status](https://img.shields.io/npm/dt/react-redux-saga-boilerplate.svg)](https://www.npmjs.com/package/react-redux-saga-boilerplate)
+
 This boilerplate contain a ready to go **react application** with **redux** and **Saga** as middleware.
 
 ## How to Run
