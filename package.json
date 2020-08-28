@@ -1,6 +1,6 @@
 {
   "name": "react-redux-saga-boilerplate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react-redux-saga-biolerplate",
   "main": "index.js",
   "scripts": {
