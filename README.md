@@ -8,17 +8,25 @@ This boilerplate contain a ready to go **react application** with **redux** and 
 
 ## How to Run
 
-1. Run following command to install dependencies
+1. Download the package on local
+
+```
+git clone https://github.com/manishaggarwalm/react-redux-saga-boilerplate.git
+```
+
+2. Run following command to install dependencies
 
 ```
 npm install
 ```
 
-2. Execute to run application in dev mode
+3. Execute to run application in dev mode
 
 ```
 npm run dev
 ```
+
+The dev server will run on `http://localhost:3000`
 
 ## Redux
 
